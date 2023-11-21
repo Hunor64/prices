@@ -1,0 +1,155 @@
+    .cardSmall,
+    .cardLarge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        background-color: #e3e1f4;
+        color: #6b6d86;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #6b6d86;
+        width: 100%;
+
+    }
+
+
+    .btnBig {
+        background-color: #8d91e8;
+        border: #f7f7ff 1px solid;
+        border-radius: 4px;
+        width: 130px;
+        color: #f7f7ff;
+        font-size: large;
+    }
+
+    .btnSmall {
+        background-color: whitesmoke;
+        border: #8d91e8 1px solid;
+        border-radius: 4px;
+        width: 130px;
+        color: darkslategray;
+        font-size: large;
+
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: #8d91e8;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #8d91e8;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .cardSmall {
+        background-color: whitesmoke;
+        color: darkslategrey;
+        border-radius: 10px;
+        width: 270px;
+        height: 370px;
+        margin: auto;
+    }
+
+    .cardLarge {
+        background-color: #8d91e8;
+        border-radius: 10px;
+        color: whitesmoke;
+        width: 270px;
+        height: 370px;
+        margin: auto;
+
+    }
+
+    @media screen and (min-width: 1000px) {
+
+
+        .cards {
+            display: flex;
+            gap: 0px;
+            flex-direction: row;
+            align-content: flex-start;
+            width: 50%;
+            min-width: 1000px;
+            margin: auto;
+        }
+
+        .cardSmall {
+            background-color: whitesmoke;
+            color: darkslategrey;
+            border-radius: 10px;
+            width: 270px;
+            height: 370px;
+            margin: auto;
+        }
+
+
+        .cardLarge {
+            background-color: #8d91e8;
+            border-radius: 10px;
+            color: whitesmoke;
+            width: 300px;
+            height: 400px;
+            margin: auto;
+
+        }
+
+    }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scrip.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Our Pricing</h1>
+        <div>
+            <label class="switch">Anually</label>
+            <label class="switch">
+                <input type="checkbox" onchange="ChangePrice()">
+                <span class="slider round"></span>
+            </label>
+            <label class="switch">Monthly</label>
+        </div>
+        <br>
+        <div class="cards">
+
+            <div class="cardSmall left">
+                <div class="cardContent">
+                    <h3>Basic</h3>
+                    <h1 id="priceBasic"></h1>
+                    <div class="line"></div>
+                    <p class="top">500GB Storage</p>
+                    <div class="line"></div>
+                    <p class="bottom">2 Users Allowed</p>
+                    <div class="line"></div>
+                    <p class="bottom">Send up to 3GB</p>
+                    <div class="line"></div>
+                    <br>
+                    <button class="btnSmall">Learn More</button>
+                </div>
+            </div>
+            <div class="cardLarge">
+                <div class="cardContent">
+                    <h3>Professional</h3>
+                    <h1 id="pricePro"></h1>
+                    <div class="line"></div>
+                    <p class="top">1TB Storage</p>
+                    <div class="line"></div>
+                    <p class="bottom">5 Users Allowed</p>
+                    <div class="line"></div>
+                    <p class="bottom">Send up to 10GB</p>
+                    <div class="line"></div>
+                    <br>
+                    <button class="btnBig">Learn More</button>
+                </div>
+            </div>
+            <div class="cardSmall right">
+                <div class="cardContent">
+                    <h3>Master</h3>
+                    <h1 id="priceMaster"></h1>
+                    <div class="line"></div>
+                    <p class="top">2TB Storage</p>
+                    <div class="line"></div>
+                    <p class="bottom">10 Users Allowed</p>
+                    <div class="line"></div>
+                    <p class="bottom">Send up to 20GB</p>
+                    <div class="line"></div>
+                    <br>
+                    <button class="btnSmall">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
